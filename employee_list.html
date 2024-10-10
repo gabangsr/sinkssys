@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employees</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+<div class="relative overflow-x-auto shadow-md sm:rounded-lg">
+    <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
+        <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+            <tr>
+                <th scope="col" class="px-6 py-3">
+                    Employee Name
+                </th>
+                <th scope="col" class="px-6 py-3">
+                    Job Title
+                </th>
+                <th scope="col" class="px-6 py-3">
+                    Department
+                </th>
+                <th scope="col" class="px-6 py-3">
+                    Email
+                </th>
+                <th scope="col" class="px-6 py-3">
+                    contact No.
+                </th>
+                <th scope="col" class="px-6 py-3">
+                    Address
+                </th>
+                <th scope="col" class="px-6 py-3">
+                    Sex
+                </th>
+                <th scope="col" class="px-6 py-3">
+                    Marital Status
+                </th>
+                <th scope="col" class="px-6 py-3">
+                    <span class="sr-only">Edit</span>
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                    Ivan Petrov
+                </th>
+                <td class="px-6 py-4">
+                    SoftwareEngineer
+                </td>
+                <td class="px-6 py-4">
+                    IT
+                </td>
+                <td class="px-6 py-4">
+                    ivan.petrov@sinksrus.com
+                </td>
+                <td class="px-6 py-4">
+                    555-6789
+                </td>
+                <td class="px-6 py-4">
+                    12 Red Square, Moscow
+                </td>
+                <td class="px-6 py-4">
+                    male
+                </td>
+                <td class="px-6 py-4">
+                    Single
+                </td>
+                <td class="px-6 py-4 text-right">
+                    <button data-modal-target="employee-modal" data-modal-toggle="employee-modal" class="block text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" type="button">
+                        ...
+                </td>
+            </tr>
+            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                    Pedro Los Baños
+                </th>
+                <td class="px-6 py-4">
+                    Marketing Manager
+                </td>
+                <td class="px-6 py-4">
+                    Marketing
+                </td>
+                <td class="px-6 py-4">
+                    pedro_los_banos@sinksrus.com
+                </td>
+                <td class="px-6 py-4">
+                    
+                </td>
+                <td class="px-6 py-4">
+                    123 Mabini St
+                </td>
+                <td class="px-6 py-4">
+                    male
+                </td>
+                <td class="px-6 py-4">
+                    Married
+                </td>
+                <td class="px-6 py-4 text-right">
+                    <button data-modal-target="employee-modal" data-modal-toggle="employee-modal" class="block text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" type="button">
+                        ...
+                </td>
+            </tr>
+            <tr class="bg-white dark:bg-gray-800 hover:bg-gray-50 dark:hover:bg-gray-600">
+                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                    Ana Gómez
+                </th>
+                <td class="px-6 py-4">
+                    HR Specialist
+                </td>
+                <td class="px-6 py-4">
+                    HR
+                </td>
+                <td class="px-6 py-4">
+                    ana.gomez@sinksrus.com
+                </td>
+                <td class="px-6 py-4">
+                    555-1526
+                </td>
+                <td class="px-6 py-4">
+                    
+                </td>
+                <td class="px-6 py-4">
+                    F
+                </td>
+                <td class="px-6 py-4">
+                    Divorced
+                </td>
+                <td class="px-6 py-4 text-right">
+                    <button data-modal-target="employee-modal" data-modal-toggle="employee-modal" class="block text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" type="button">
+                        ...
+                </td>
+            </tr>
+            <tr class="bg-white dark:bg-gray-800 hover:bg-gray-50 dark:hover:bg-gray-600">
+                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                    John Wu
+                </th>
+                <td class="px-6 py-4">
+                    Sales Associate
+                </td>
+                <td class="px-6 py-4">
+                    Sales
+                </td>
+                <td class="px-6 py-4">
+                    john.wu@sinksrus.com
+                </td>
+                <td class="px-6 py-4">
+                    555-6925
+                </td>
+                <td class="px-6 py-4">
+                    456 Rizal St
+                </td>
+                <td class="px-6 py-4">
+                    male
+                </td>
+                <td class="px-6 py-4">
+                    Single
+                </td>
+                <td class="px-6 py-4 text-right">
+                    <button data-modal-target="employee-modal" data-modal-toggle="employee-modal" class="block text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" type="button">
+                        ...
+                </td>
+            </tr>
+            <tr class="bg-white dark:bg-gray-800 hover:bg-gray-50 dark:hover:bg-gray-600">
+                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                    Emma Wilson
+                </th>
+                <td class="px-6 py-4">
+                    CEO
+                </td>
+                <td class="px-6 py-4">
+                    Admin
+                </td>
+                <td class="px-6 py-4">
+                    emma@sinksrus.com
+                </td>
+                <td class="px-6 py-4">
+                    555-1111
+                </td>
+                <td class="px-6 py-4">
+                    
+                </td>
+                <td class="px-6 py-4">
+                    female
+                </td>
+                <td class="px-6 py-4">
+                    Married
+                </td>
+                <td class="px-6 py-4 text-right">
+                    <button data-modal-target="employee-modal" data-modal-toggle="employee-modal" class="block text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" type="button">
+                        ...
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+</body>
+</html>
