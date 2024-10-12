@@ -5,24 +5,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Oswald', sans-serif;
+        }
+    </style>
 </head>
-<body class="flex items-center justify-center h-screen bg-gray-100">
-    <div class="bg-white p-6 rounded-lg shadow-lg w-80">
-        <h2 class="text-2xl font-bold text-center mb-6">Login</h2>
-        <form id="loginForm" action="employee_list.html" method="get" class="space-y-4">
-            <div>
-                <label for="username" class="block text-sm font-medium">Username</label>
-                <input type="text" id="username" name="username" required
-                       class="w-full mt-1 p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-400">
-            </div>
-            <div>
-                <label for="password" class="block text-sm font-medium">Password</label>
-                <input type="password" id="password" name="password" required
-                       class="w-full mt-1 p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-400">
-            </div>
-            <input type="submit" value="Login"
-                   class="w-full bg-green-500 text-white py-2 rounded-lg hover:bg-green-600 transition duration-200 cursor-pointer">
-        </form>
-    </div>
+<body class="flex flex-col min-h-screen bg-cover bg-center" style="background-image: url('./images/water.jpg')">
+    <header class="w-full py-12 bg-black bg-opacity-70 text-[#3981BE] text-center shadow-lg">
+        <div class="container mx-auto text-center">
+            <h1 class="text-3xl font-bold text-[#3981BE]">Welcome to Sinks R Us</h1>
+        </div>
+    </header>
+
+    <main class="flex-grow flex items-center justify-center">
+        <div class="bg-white p-6 rounded-lg shadow-lg w-80">
+            <h2 class="text-2xl font-bold text-center mb-6">Login</h2>
+            <form id="loginForm" action="employee_list.html" method="get" class="space-y-4">
+                <div>
+                    <label for="username" class="block text-sm font-medium">Username</label>
+                    <input type="text" id="username" name="username" required
+                           class="w-full mt-1 p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#FFFCF6]">
+                </div>
+                <div>
+                    <label for="password" class="block text-sm font-medium">Password</label>
+                    <input type="password" id="password" name="password" required
+                           class="w-full mt-1 p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#FFFCF6]">
+                </div>
+                <input type="submit" value="Login"
+                       class="w-full py-2 rounded-lg text-white bg-[#3981BE] hover:bg-[#6BBAC1] transition-colors duration-300 cursor-pointer">
+            </form>
+        </div>
+    </main>
+
+    <footer class="w-full py-8 bg-black bg-opacity-70 text-[#3981BE] text-center shadow-lg">
+        <div class="container mx-auto text-center">
+            <p class="text-[#3981BE]">&copy; 2024 SINKS R US. All rights reserved.</p>
+        </div>
+    </footer>
 </body>
 </html>
