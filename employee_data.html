@@ -1,60 +1,75 @@
-<div id="employee-modal">
-    <div>
-        <!-- contentge -->
-        <div>
-            <!-- headerge -->
-             <div>
-                <h3>
-                    Employee Details
-                </h3>
-                <button>
-                    <svg>
-                        <path/>
-                    </svg>
-                    <span> Close </span>
-                 </button>
-             </div>
-        </div>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+</head>
+<body>
 
-        <!-- bodyge -->
-        <div>
+    <div id="employee-modal" class="fixed inset-0 bg-gray-800 bg-opacity-75 flex items-center justify-center">
+        <div class="bg-white rounded-lg shadow-lg w-full max-w-4xl p-6">
+            <!-- contentge -->
             <div>
-                <!-- image -->
-            </div>       
-            <div>
-                <!-- tablege -->
-                 <table>
-                    <tr>
-                        <th> Name </th>
-                        <th> Job Title </th>
-                        <th> Department </th>
-                        <th> Email </th>
-                        <th> Contact No. </th>
-                        <th> Address </th>
-                        <th> Sex </th>
-                        <th> Marital Status </th>
-                        <th> Age </th>
-                        <th> Schedule </th>
-                        <th> Status </th>
-                        <th> Leaves </th>   
-                    </tr>
-                    <tr>
-                        <td> Ivan Petrov </td>
-                        <td> SoftwareEngineer </td>
-                        <td> IT </td>
-                        <td> ivan.petrov@sinksrus.com </td>
-                        <td> 555-6789 </td>
-                        <td> 12 Red Square, Moscow </td>
-                        <td> Male </td>
-                        <td> Single </td>
-                        <td> 32 </td>
-                        <td> MWTHF 9:09 AM to 5:00 PM</td>
-                        <td> Deployed </td>
-                        <td> 3 Leaves left</td>
-                    </tr>
-                 </table>
+                <!-- headerge -->
+                <div class="flex justify-between items-center mb-4">
+                    <h3 class="text-xl font-semibold text-black-900">Employee Details</h3>
+                    <button class="flex items-center text-black-500 hover:text-gray-700 focus:outline-none">
+                        <svg class="w-6 h-6 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                            <path d="M10 8.586L4.707 3.293 3.293 4.707 8.586 10l-5.293 5.293 1.414 1.414L10 11.414l5.293 5.293 1.414-1.414L11.414 10l5.293-5.293-1.414-1.414L10 8.586z"/>
+                        </svg>
+                        <span class="ml-2">Close</span>
+                    </button>
+                </div>
             </div>
-
+    
+            <!-- bodyge -->
+            <div class="flex space-x-6 shadow-md sm:rounded-lg relative overflow-x-auto">
+                <div class="w-1/4">
+                    <!-- imagege -->
+                    <img src="#" alt="#" class="rounded-full shadow-lg">
+                </div>
+                <div class="w-3/4">
+                    <!-- tablege -->
+                    <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
+                        <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+                            <tr class="bg-gray-100">
+                                <th  scope="col" class="px-6 py-3">Name</th>
+                                <th  scope="col" class="px-6 py-3">Job Title</th>
+                                <th  scope="col" class="px-6 py-3">Department</th>
+                                <th  scope="col" class="px-6 py-3">Email</th>
+                                <th  scope="col" class="px-6 py-3">Contact No.</th>
+                                <th  scope="col" class="px-6 py-3">Address</th>
+                                <th  scope="col" class="px-6 py-3">Sex</th>
+                                <th  scope="col" class="px-6 py-3">Marital Status</th>
+                                <th  scope="col" class="px-6 py-3">Age</th>
+                                <th  scope="col" class="px-6 py-3">Schedule</th>
+                                <th  scope="col" class="px-6 py-3">Status</th>
+                                <th  scope="col" class="px-6 py-3">Leaves</th>   
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                                <td scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">Ivan Petrov</td>
+                                <td  scope="col" class="px-6 py-4">Software Engineer</td>
+                                <td  scope="col" class="px-6 py-4">IT</td>
+                                <td  scope="col" class="px-6 py-4">ivan.petrov@sinksrus.com</td>
+                                <td  scope="col" class="px-6 py-4">555-6789</td>
+                                <td  scope="col" class="px-6 py-4">12 Red Square, Moscow</td>
+                                <td  scope="col" class="px-6 py-4">Male</td>
+                                <td  scope="col" class="px-6 py-4">Single</td>
+                                <td  scope="col" class="px-6 py-4">32</td>
+                                <td  scope="col" class="px-6 py-4">MWTHF 9:00 AM to 5:00 PM</td>
+                                <td  scope="col" class="px-6 py-4">Deployed</td>
+                                <td  scope="col" class="px-6 py-4">3 Leaves left</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
         </div>
     </div>
-</div>
+    
+    
+</body>
+</html>
