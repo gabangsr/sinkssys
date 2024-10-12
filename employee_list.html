@@ -50,7 +50,7 @@
                         <td class="px-6 py-4 border-b">Male</td>
                         <td class="px-6 py-4 border-b">Single</td>
                         <td class="px-6 py-4 border-b text-center">
-                            <button data-modal-target="employee-modal" data-modal-toggle="employee-modal" class="block text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" type="button">
+                            <button data-modal-target="employee-modal1" class="modal-toggle block text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" type="button">
                                 ...
                             </button>
                         </td>
@@ -65,7 +65,7 @@
                         <td class="px-6 py-4 border-b">Male</td>
                         <td class="px-6 py-4 border-b">Married</td>
                         <td class="px-6 py-4 border-b text-center">
-                            <button data-modal-target="employee-modal" data-modal-toggle="employee-modal" class="block text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" type="button">
+                            <button data-modal-target="employee-modal2" class="modal-toggle block text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" type="button">
                                 ...
                             </button>
                         </td>
@@ -80,7 +80,7 @@
                         <td class="px-6 py-4 border-b">Female</td>
                         <td class="px-6 py-4 border-b">Divorced</td>
                         <td class="px-6 py-4 border-b text-center">
-                            <button data-modal-target="employee-modal" data-modal-toggle="employee-modal" class="block text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" type="button">
+                            <button data-modal-target="employee-modal3" class="modal-toggle block text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" type="button">
                                 ...
                             </button>
                         </td>
@@ -95,7 +95,7 @@
                         <td class="px-6 py-4 border-b">Male</td>
                         <td class="px-6 py-4 border-b">Single</td>
                         <td class="px-6 py-4 border-b text-center">
-                            <button data-modal-target="employee-modal" data-modal-toggle="employee-modal" class="block text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" type="button">
+                            <button data-modal-target="employee-modal4" class="modal-toggle block text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" type="button">
                                 ...
                             </button>
                         </td>
@@ -110,7 +110,7 @@
                         <td class="px-6 py-4 border-b">Female</td>
                         <td class="px-6 py-4 border-b">Married</td>
                         <td class="px-6 py-4 border-b text-center">
-                            <button data-modal-target="employee-modal" data-modal-toggle="employee-modal" class="block text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" type="button">
+                            <button data-modal-target="employee-modal5" class="modal-toggle block text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" type="button">
                                 ...
                             </button>
                         </td>
@@ -123,5 +123,316 @@
     <footer class="w-full py-4 bg-black bg-opacity-70 text-[#3981BE] text-center shadow-lg">
         <p>&copy; 2024 Employee Directory | All rights reserved.</p>
     </footer>
+
+    <div id="employee-modal1" class="hidden fixed inset-0 bg-gray-800 bg-opacity-75 flex items-center justify-center">
+        <div class="bg-white rounded-lg shadow-lg w-full max-w-4xl p-6">
+            <div>
+                <div class="flex justify-between items-center mb-4">
+                    <h3 class="text-xl font-semibold text-black-900">Employee Details</h3>
+                    <button class="modal-close flex items-center text-black-500 hover:text-gray-700 focus:outline-none">
+                        <svg class="w-6 h-6 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                            <path d="M10 8.586L4.707 3.293 3.293 4.707 8.586 10l-5.293 5.293 1.414 1.414L10 11.414l5.293 5.293 1.414-1.414L11.414 10l5.293-5.293-1.414-1.414L10 8.586z"/>
+                        </svg>
+                        <span class="ml-2">Close</span>
+                    </button>
+                </div>
+            </div>
+    
+            <div class="flex space-x-6 shadow-md sm:rounded-lg relative overflow-x-auto">
+                <div class="w-1/4">
+                    <img src="https://media.istockphoto.com/id/1341046662/vector/picture-profile-icon-human-or-people-sign-and-symbol-for-template-design.jpg?s=612x612&w=0&k=20&c=A7z3OK0fElK3tFntKObma-3a7PyO8_2xxW0jtmjzT78=" alt="Profile Picture" class="rounded-full shadow-lg">
+                </div>
+                <div class="w-3/4">
+                    <table class="w-full text-sm text-left rtl:text-right text-white-500 dark:text-gray-400">
+                        <thead class="text-xs text-black-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+                            <tr class="bg-blue-400">
+                                <th  scope="col" class="px-6 py-3">Name</th>
+                                <th  scope="col" class="px-6 py-3">Job Title</th>
+                                <th  scope="col" class="px-6 py-3">Department</th>
+                                <th  scope="col" class="px-6 py-3">Email</th>
+                                <th  scope="col" class="px-6 py-3">Contact No.</th>
+                                <th  scope="col" class="px-6 py-3">Address</th>
+                                <th  scope="col" class="px-6 py-3">Sex</th>
+                                <th  scope="col" class="px-6 py-3">Marital Status</th>
+                                <th  scope="col" class="px-6 py-3">Age</th>
+                                <th  scope="col" class="px-6 py-3">Schedule</th>
+                                <th  scope="col" class="px-6 py-3">Status</th>
+                                <th  scope="col" class="px-6 py-3">Leaves</th>   
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                                <td scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">Ivan Petrov</td>
+                                <td  scope="col" class="px-6 py-4">Software Engineer</td>
+                                <td  scope="col" class="px-6 py-4">IT</td>
+                                <td  scope="col" class="px-6 py-4">ivan.petrov@sinksrus.com</td>
+                                <td  scope="col" class="px-6 py-4">555-6789</td>
+                                <td  scope="col" class="px-6 py-4">12 Red Square, Moscow</td>
+                                <td  scope="col" class="px-6 py-4">Male</td>
+                                <td  scope="col" class="px-6 py-4">Single</td>
+                                <td  scope="col" class="px-6 py-4">32</td>
+                                <td  scope="col" class="px-6 py-4">MWTHF 9:00 AM to 5:00 PM</td>
+                                <td  scope="col" class="px-6 py-4">Deployed</td>
+                                <td  scope="col" class="px-6 py-4">3 Leaves left</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="employee-modal2" class="hidden fixed inset-0 bg-gray-800 bg-opacity-75 flex items-center justify-center">
+        <div class="bg-white rounded-lg shadow-lg w-full max-w-4xl p-6">
+            <div>
+                <div class="flex justify-between items-center mb-4">
+                    <h3 class="text-xl font-semibold text-black-900">Employee Details</h3>
+
+                    <button class="modal-close flex items-center text-black-500 hover:text-gray-700 focus:outline-none">
+                        <svg class="w-6 h-6 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                            <path d="M10 8.586L4.707 3.293 3.293 4.707 8.586 10l-5.293 5.293 1.414 1.414L10 11.414l5.293 5.293 1.414-1.414L11.414 10l5.293-5.293-1.414-1.414L10 8.586z"/>
+                        </svg>
+                        <span class="ml-2">Close</span>
+                    </button>
+                </div>
+            </div>
+    
+            <div class="flex space-x-6 shadow-md sm:rounded-lg relative overflow-x-auto">
+                <div class="w-1/4">
+                    <img src="https://media.istockphoto.com/id/1341046662/vector/picture-profile-icon-human-or-people-sign-and-symbol-for-template-design.jpg?s=612x612&w=0&k=20&c=A7z3OK0fElK3tFntKObma-3a7PyO8_2xxW0jtmjzT78=" alt="Profile Picture" class="rounded-full shadow-lg">
+                </div>
+                <div class="w-3/4">
+                    <table class="w-full text-sm text-left rtl:text-right text-white-500 dark:text-gray-400">
+                        <thead class="text-xs text-black-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+                            <tr class="bg-blue-400">
+                                <th  scope="col" class="px-6 py-3">Name</th>
+                                <th  scope="col" class="px-6 py-3">Job Title</th>
+                                <th  scope="col" class="px-6 py-3">Department</th>
+                                <th  scope="col" class="px-6 py-3">Email</th>
+                                <th  scope="col" class="px-6 py-3">Contact No.</th>
+                                <th  scope="col" class="px-6 py-3">Address</th>
+                                <th  scope="col" class="px-6 py-3">Sex</th>
+                                <th  scope="col" class="px-6 py-3">Marital Status</th>
+                                <th  scope="col" class="px-6 py-3">Age</th>
+                                <th  scope="col" class="px-6 py-3">Schedule</th>
+                                <th  scope="col" class="px-6 py-3">Status</th>
+                                <th  scope="col" class="px-6 py-3">Leaves</th>   
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                                <td scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">Pedro Los Baños</td>
+                                <td  scope="col" class="px-6 py-4">Marketing Manager</td>
+                                <td  scope="col" class="px-6 py-4">Marketing</td>
+                                <td  scope="col" class="px-6 py-4">pedro_los_banos@sinksrus.com</td>
+                                <td  scope="col" class="px-6 py-4">N/A</td>
+                                <td  scope="col" class="px-6 py-4">123 Mabini St</td>
+                                <td  scope="col" class="px-6 py-4">Male</td>
+                                <td  scope="col" class="px-6 py-4">Married</td>
+                                <td  scope="col" class="px-6 py-4">47</td>
+                                <td  scope="col" class="px-6 py-4">ThFS 9:00 AM to 5:00 PM</td>
+                                <td  scope="col" class="px-6 py-4">Deployed</td>
+                                <td  scope="col" class="px-6 py-4">1 Leave left</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="employee-modal3" class="hidden fixed inset-0 bg-gray-800 bg-opacity-75 flex items-center justify-center">
+        <div class="bg-white rounded-lg shadow-lg w-full max-w-4xl p-6">
+            <div>
+                <div class="flex justify-between items-center mb-4">
+                    <h3 class="text-xl font-semibold text-black-900">Employee Details</h3>
+
+                    <button class="modal-close flex items-center text-black-500 hover:text-gray-700 focus:outline-none">
+                        <svg class="w-6 h-6 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                            <path d="M10 8.586L4.707 3.293 3.293 4.707 8.586 10l-5.293 5.293 1.414 1.414L10 11.414l5.293 5.293 1.414-1.414L11.414 10l5.293-5.293-1.414-1.414L10 8.586z"/>
+                        </svg>
+                        <span class="ml-2">Close</span>
+                    </button>
+                </div>
+            </div>
+    
+            <div class="flex space-x-6 shadow-md sm:rounded-lg relative overflow-x-auto">
+                <div class="w-1/4">
+                    <img src="https://media.istockphoto.com/id/1341046662/vector/picture-profile-icon-human-or-people-sign-and-symbol-for-template-design.jpg?s=612x612&w=0&k=20&c=A7z3OK0fElK3tFntKObma-3a7PyO8_2xxW0jtmjzT78=" alt="Profile Picture" class="rounded-full shadow-lg">
+                </div>
+                <div class="w-3/4">
+                    <table class="w-full text-sm text-left rtl:text-right text-white-500 dark:text-gray-400">
+                        <thead class="text-xs text-black-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+                            <tr class="bg-blue-400">
+                                <th  scope="col" class="px-6 py-3">Name</th>
+                                <th  scope="col" class="px-6 py-3">Job Title</th>
+                                <th  scope="col" class="px-6 py-3">Department</th>
+                                <th  scope="col" class="px-6 py-3">Email</th>
+                                <th  scope="col" class="px-6 py-3">Contact No.</th>
+                                <th  scope="col" class="px-6 py-3">Address</th>
+                                <th  scope="col" class="px-6 py-3">Sex</th>
+                                <th  scope="col" class="px-6 py-3">Marital Status</th>
+                                <th  scope="col" class="px-6 py-3">Age</th>
+                                <th  scope="col" class="px-6 py-3">Schedule</th>
+                                <th  scope="col" class="px-6 py-3">Status</th>
+                                <th  scope="col" class="px-6 py-3">Leaves</th>   
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                                <td scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">Ana Gómez</td>
+                                <td  scope="col" class="px-6 py-4">HR Specialist</td>
+                                <td  scope="col" class="px-6 py-4">HR</td>
+                                <td  scope="col" class="px-6 py-4">ana.gomez@sinksrus.com</td>
+                                <td  scope="col" class="px-6 py-4">555-1526</td>
+                                <td  scope="col" class="px-6 py-4">N/A</td>
+                                <td  scope="col" class="px-6 py-4">F</td>
+                                <td  scope="col" class="px-6 py-4">Divorced</td>
+                                <td  scope="col" class="px-6 py-4">35</td>
+                                <td  scope="col" class="px-6 py-4">TThS 9:00 AM to 5:00 PM</td>
+                                <td  scope="col" class="px-6 py-4">On Vacation Leave</td>
+                                <td  scope="col" class="px-6 py-4">0 Leaves left</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="employee-modal4" class="hidden fixed inset-0 bg-gray-800 bg-opacity-75 flex items-center justify-center">
+        <div class="bg-white rounded-lg shadow-lg w-full max-w-4xl p-6">
+            <div>
+                <div class="flex justify-between items-center mb-4">
+                    <h3 class="text-xl font-semibold text-black-900">Employee Details</h3>
+
+                    <button class="modal-close flex items-center text-black-500 hover:text-gray-700 focus:outline-none">
+                        <svg class="w-6 h-6 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                            <path d="M10 8.586L4.707 3.293 3.293 4.707 8.586 10l-5.293 5.293 1.414 1.414L10 11.414l5.293 5.293 1.414-1.414L11.414 10l5.293-5.293-1.414-1.414L10 8.586z"/>
+                        </svg>
+                        <span class="ml-2">Close</span>
+                    </button>
+                </div>
+            </div>
+    
+            <div class="flex space-x-6 shadow-md sm:rounded-lg relative overflow-x-auto">
+                <div class="w-1/4">
+                    <img src="https://media.istockphoto.com/id/1341046662/vector/picture-profile-icon-human-or-people-sign-and-symbol-for-template-design.jpg?s=612x612&w=0&k=20&c=A7z3OK0fElK3tFntKObma-3a7PyO8_2xxW0jtmjzT78=" alt="Profile Picture" class="rounded-full shadow-lg">
+                </div>
+                <div class="w-3/4">
+                    <table class="w-full text-sm text-left rtl:text-right text-white-500 dark:text-gray-400">
+                        <thead class="text-xs text-black-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+                            <tr class="bg-blue-400">
+                                <th  scope="col" class="px-6 py-3">Name</th>
+                                <th  scope="col" class="px-6 py-3">Job Title</th>
+                                <th  scope="col" class="px-6 py-3">Department</th>
+                                <th  scope="col" class="px-6 py-3">Email</th>
+                                <th  scope="col" class="px-6 py-3">Contact No.</th>
+                                <th  scope="col" class="px-6 py-3">Address</th>
+                                <th  scope="col" class="px-6 py-3">Sex</th>
+                                <th  scope="col" class="px-6 py-3">Marital Status</th>
+                                <th  scope="col" class="px-6 py-3">Age</th>
+                                <th  scope="col" class="px-6 py-3">Schedule</th>
+                                <th  scope="col" class="px-6 py-3">Status</th>
+                                <th  scope="col" class="px-6 py-3">Leaves</th>   
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                                <td scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">John Wu</td>
+                                <td  scope="col" class="px-6 py-4">Sales Associate</td>
+                                <td  scope="col" class="px-6 py-4">Sales</td>
+                                <td  scope="col" class="px-6 py-4">john.wu@sinksrus.com</td>
+                                <td  scope="col" class="px-6 py-4">555-6925</td>
+                                <td  scope="col" class="px-6 py-4">456 Rizal St</td>
+                                <td  scope="col" class="px-6 py-4">male</td>
+                                <td  scope="col" class="px-6 py-4">Single</td>
+                                <td  scope="col" class="px-6 py-4">24</td>
+                                <td  scope="col" class="px-6 py-4">TThFS 11:00 AM to 5:00 PM</td>
+                                <td  scope="col" class="px-6 py-4">Deployed</td>
+                                <td  scope="col" class="px-6 py-4">2 Leaves left</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="employee-modal5" class="hidden fixed inset-0 bg-gray-800 bg-opacity-75 flex items-center justify-center">
+        <div class="bg-white rounded-lg shadow-lg w-full max-w-4xl p-6">
+            <div>
+                <div class="flex justify-between items-center mb-4">
+                    <h3 class="text-xl font-semibold text-black-900">Employee Details</h3>
+
+                    <button class="modal-close flex items-center text-black-500 hover:text-gray-700 focus:outline-none">
+                        <svg class="w-6 h-6 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                            <path d="M10 8.586L4.707 3.293 3.293 4.707 8.586 10l-5.293 5.293 1.414 1.414L10 11.414l5.293 5.293 1.414-1.414L11.414 10l5.293-5.293-1.414-1.414L10 8.586z"/>
+                        </svg>
+                        <span class="ml-2">Close</span>
+                    </button>
+                </div>
+            </div>
+    
+            <div class="flex space-x-6 shadow-md sm:rounded-lg relative overflow-x-auto">
+                <div class="w-1/4">
+                    <img src="https://media.istockphoto.com/id/1341046662/vector/picture-profile-icon-human-or-people-sign-and-symbol-for-template-design.jpg?s=612x612&w=0&k=20&c=A7z3OK0fElK3tFntKObma-3a7PyO8_2xxW0jtmjzT78=" alt="Profile Picture" class="rounded-full shadow-lg">
+                </div>
+                <div class="w-3/4">
+                    <table class="w-full text-sm text-left rtl:text-right text-white-500 dark:text-gray-400">
+                        <thead class="text-xs text-black-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+                            <tr class="bg-blue-400">
+                                <th  scope="col" class="px-6 py-3">Name</th>
+                                <th  scope="col" class="px-6 py-3">Job Title</th>
+                                <th  scope="col" class="px-6 py-3">Department</th>
+                                <th  scope="col" class="px-6 py-3">Email</th>
+                                <th  scope="col" class="px-6 py-3">Contact No.</th>
+                                <th  scope="col" class="px-6 py-3">Address</th>
+                                <th  scope="col" class="px-6 py-3">Sex</th>
+                                <th  scope="col" class="px-6 py-3">Marital Status</th>
+                                <th  scope="col" class="px-6 py-3">Age</th>
+                                <th  scope="col" class="px-6 py-3">Schedule</th>
+                                <th  scope="col" class="px-6 py-3">Status</th>
+                                <th  scope="col" class="px-6 py-3">Leaves</th>   
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                                <td scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">Emma Wilson</td>
+                                <td  scope="col" class="px-6 py-4">CEO</td>
+                                <td  scope="col" class="px-6 py-4">Admin</td>
+                                <td  scope="col" class="px-6 py-4">emma@sinksrus.com</td>
+                                <td  scope="col" class="px-6 py-4">555-1111</td>
+                                <td  scope="col" class="px-6 py-4">456 Rizal St</td>
+                                <td  scope="col" class="px-6 py-4">female</td>
+                                <td  scope="col" class="px-6 py-4">Married</td>
+                                <td  scope="col" class="px-6 py-4">40</td>
+                                <td  scope="col" class="px-6 py-4">MWF 11:00 AM to 5:00 PM</td>
+                                <td  scope="col" class="px-6 py-4">Deployed</td>
+                                <td  scope="col" class="px-6 py-4">3 Leaves left</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div> 
+
+    <script>
+        const modalToggles = document.querySelectorAll('.modal-toggle');
+
+        modalToggles.forEach(button => {
+            const targetModal = document.getElementById(button.getAttribute('data-modal-target'));
+
+            button.addEventListener('click', () => {
+                targetModal.classList.remove('hidden');
+            });
+
+            const closeModalBtn = targetModal.querySelector('.modal-close');
+            closeModalBtn.addEventListener('click', () => {
+                targetModal.classList.add('hidden');
+            });
+        });
+    </script>
 </body>
 </html>
